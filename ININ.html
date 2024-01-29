@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./bootstrap.min.css">
+    <Link rel="stylesheet" href="./aos.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -48,7 +49,7 @@
     <!-- card -->
     <div class="row">
         <!-- card1 -->
-      <div class="col-3 card m-auto ">
+      <div class="col-3 card m-auto " data-aos="fade-up">
         <img src="..." class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
@@ -58,7 +59,7 @@
 
         <!-- card2 -->
       </div>
-      <div class="col-3 card m-auto">
+      <div class="col-3 card m-auto" data-aos="fade-down">
         <img src="..." class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
@@ -90,5 +91,10 @@
   </div>
 
 </body>
-<script src="./bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+<script src="./aos.js"></script>
+<script  src="./bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  AOS.init();
+</script>
+
 </html>
